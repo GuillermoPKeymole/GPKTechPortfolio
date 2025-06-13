@@ -102,9 +102,11 @@ nav a:hover i {
 }
 
 main {
-  width: 100%;
-  margin: 40px 0;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 15px;
 }
+
 
 
 section {
@@ -472,4 +474,31 @@ footer {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px 15px;
+  }
+
+  .sidebar nav ul {
+    align-items: center;
+  }
+
+  .sidebar nav li {
+    width: 100%;
+    text-align: center;
+  }
 }
